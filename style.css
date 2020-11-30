@@ -1,0 +1,43 @@
+.centro {
+    text-align: center;
+}
+
+.esquerda {
+    text-align: left;
+}
+
+.direita {
+    text-align: right;
+}
+
+.espaco {
+    margin-top: 8px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  td, th {
+    border: 3px solid #000000;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .borda {
+      border: black 2px solid;
+      width: 50%;
+      display: block;
+      margin:  0 auto;
+  }
+
+  .dist {
+      padding: 18px;
+  }

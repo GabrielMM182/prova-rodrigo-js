@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova controle de contas</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>      
+
+    <div class="borda dist">
+        <h1 class="centro"><b>controle de contas</b></h1>
+
+        <div >
+            <div >
+                <label  for="descri">Descrição</label>
+                <input class="espaco" type="text" name="descri" id="descri"><br>
+        
+                <label  for="valor">Valor</label>
+                <input class="espaco" type="number" name="valor" id="valor" value="valor"><br>
+        
+                <label  for="data">Data de Vencimento</label>
+                <input class="espaco" type="date" name="data" id="data" value="data"><br>
+        
+                <label  for="tipo">Tipo</label>
+                <input class="espaco" type="text" name="tipo" id="tipo"><br>
+        
+                <button class="espaco" type="button" id="salvar">Salvar</button>
+            </div>
+    
+        </div>
+    
+    
+        <h1><b>Contas cadastradas</b></h1>
+    
+        <div>   
+            <table>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data de Vencimento</th>
+                    <th>Tipo</th>
+    
+                </tr>
+
+                <tr>
+                    <th onblur=""></th>
+                    <th onblur="valor(this)"></th>
+                    <th onblur="data(this)"></th>
+                    <th onblur="tipo(this)"></th>
+                </tr>
+            </table>
+    
+            <p class="direita" id="salvar">saldo: R$ {{valor}}</p>
+    
+        </div>
+    </div>
+
+
+
+    
+    <script src="./script/script.js"></script>
+</body>
+</html>
